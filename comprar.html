@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar - Synk Electrónica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Synk 🔗</a>
+                <nav>
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="listado_box.html" class="nav-link">Catálogo Grid</a>
+                    <a href="listado_tabla.html" class="nav-link">Catálogo Tabla</a>
+                    <a href="#" class="nav-link active">Comprar</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Formulario de Compra</h1>
+            
+            <div class="form-container">
+                <form action="#mensaje" method="get" class="compra-form">
+
+                    <fieldset>
+                        <legend>Datos del Cliente</legend>
+                        <div class="grid-2">
+                            <div class="input-group">
+                                <label for="nombre">Nombre completo</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="direccion">Dirección</label>
+                                <input type="text" id="direccion" name="direccion" required>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Método de Pago</legend>
+                        <div class="input-group">
+                            <label for="pago">Seleccione método de pago</label>
+                            <select id="pago" name="pago" required>
+                                <option value="">-- Seleccione --</option>
+                                <option value="tarjeta">Tarjeta de crédito/débito</option>
+                                <option value="transferencia">Transferencia bancaria</option>
+                                <option value="efectivo">Efectivo en pickup point</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Productos a Comprar</legend>
+                        <div class="productos-list">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="productos[]" value="smartphone">
+                                <span class="checkmark"></span>
+                                Smartphone Premium - <span class="precio-item">$299.999</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="productos[]" value="auriculares">
+                                <span class="checkmark"></span>
+                                Auriculares Gaming - <span class="precio-item">$89.999</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="productos[]" value="notebook">
+                                <span class="checkmark"></span>
+                                Notebook Gamer - <span class="precio-item">$899.999</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="productos[]" value="monitor">
+                                <span class="checkmark"></span>
+                                Monitor Gaming 27" - <span class="precio-item">$399.999</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="productos[]" value="teclado">
+                                <span class="checkmark"></span>
+                                Teclado Mecánico - <span class="precio-item">$129.999</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="productos[]" value="mouse">
+                                <span class="checkmark"></span>
+                                Mouse Gaming RGB - <span class="precio-item">$69.999</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="reset" class="btn btn-secondary">Limpiar</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Compra</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div id="mensaje" class="modal">
+        <div class="modal-content">
+            <h2>✅ ¡Compra Confirmada!</h2>
+            <p>Tu pedido está siendo procesado. Te enviaremos la confirmación por email.</p>
+            <a href="#" class="btn btn-primary">Cerrar</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Synk Electrónica</h3>
+                    <p>Tu tienda de tecnología de confianza</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <a href="index.html">Inicio</a>
+                    <a href="listado_box.html">Catálogo</a>
+                    <a href="#">Contacto</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>Email: info@synk.com</p>
+                    <p>Tel: +54 376 428-1622</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Synk Electrónica</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
